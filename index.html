@@ -84,7 +84,62 @@
 								<li>No huge registration fee - it's a "paltry" $30.</li>
 							</ul>
 							<p>The course offers scenic views of the Peninsula Bay Area, a jaunt across Dumbarton Bridge, loop around Facebook campus, and a few hidden trails. Designed for safety, the South Bay section is clockwise to minimize left turns. And an overall portion of the course is trail, bike lane, or low car traffic.</p>
-							<a href="" class="button special">Register to Ride</a>&nbsp;&nbsp;<span><span style="color:red">Registration opens July 1st!</span></span>
+
+
+                            <div style="border: 1px red solid;">TESTING: The following is Eventbrite's <strong>modal</strong> purchase option</div>
+
+                            <!-- Noscript content for added SEO -->
+                            <noscript><a href="https://www.eventbrite.com/e/civ-century-test-tickets-151250802221" rel="noopener noreferrer" target="_blank"></noscript>
+                            <!-- You can customize this button any way you like -->
+                            <button id="eventbrite-widget-modal-trigger-151250802221" type="button">Buy Tickets</button>
+                            <noscript></a>Register to Ride</noscript>&nbsp;&nbsp;<span><span style="color:red">Registration opens July 1st!</span></span>
+
+                            <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+                            <script type="text/javascript">
+                                var exampleCallback = function() {
+                                    console.log('Order complete!');
+                                };
+
+                                window.EBWidgets.createWidget({
+                                    widgetType: 'checkout',
+                                    eventId: '151250802221',
+                                    modal: true,
+                                    modalTriggerElementId: 'eventbrite-widget-modal-trigger-151250802221',
+                                    onOrderComplete: exampleCallback
+                                });
+                            </script>
+
+
+                            <p> </p>
+                            <div style="border: 1px red solid;">TESTING: The following is Eventbrite's <strong>embedded</strong> purchase option</div>
+
+							<!--a href="" class="button special">Register to Ride</a-->
+
+                            <div id="eventbrite-widget-container-151250802221"></div>
+
+                            <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+                            <script type="text/javascript">
+                                var exampleCallback = function() {
+                                    console.log('Order complete!');
+                                };
+
+                                window.EBWidgets.createWidget({
+                                    // Required
+                                    widgetType: 'checkout',
+                                    eventId: '151250802221',
+                                    iframeContainerId: 'eventbrite-widget-container-151250802221',
+
+                                    // Optional
+                                    iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                                    onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+                                });
+                            </script>
+
+
+
+
 						</div>
 					</article>
 					<article>
